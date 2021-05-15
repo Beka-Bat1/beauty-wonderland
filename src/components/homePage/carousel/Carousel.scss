@@ -1,0 +1,19 @@
+.carousel {
+    height: 470px;
+    width: 100%;
+    overflow: auto;
+}
+
+.carousel-inner {
+    height: inherit;
+    width: inherit;
+   
+}
+
+.carousel-caption {
+    margin-bottom: 5em;
+}
+
+.img-fluid{
+    max-height: inherit;
+}
