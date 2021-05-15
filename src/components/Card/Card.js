@@ -8,6 +8,7 @@ const Card = (props) => {
     <div className="card">
     {/* this line should contain images of product */}
       <img src={cos2} className="card-img-top" alt="..." />
+      <hr />
       <div className="card-body">
         <h5 className="card-title">Card title</h5>
         <p className="card__coheader"></p>

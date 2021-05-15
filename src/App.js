@@ -12,7 +12,12 @@ class App extends Component {
 
   return (
     <Layer>
-      <Card />
+      <div className="background1">
+
+      </div>
+      <div className="backgroudn2">
+        
+      </div>
     </Layer>
   );
 }
