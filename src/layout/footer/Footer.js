@@ -29,7 +29,7 @@ const Footer = () => {
         <li className="list-group-item">
           {" "}
           <span>
-            <i class="far fa-copyright"></i>
+            <i className="far fa-copyright"></i>
           </span>{" "}
           BeutyWonderland inc. All rights reserved{" "}
         </li>

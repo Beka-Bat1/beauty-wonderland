@@ -39,7 +39,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a class="nav-link" href="#">
+                  <a className="nav-link" href="#">
                     My cart
                     <div className="cart__circle">1</div>
                   </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <button
             className="navbar-toggler"
             type="button"
-            for="btnControl"
+            htmlFor="btnControl"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"

@@ -4,7 +4,7 @@ import $ from "jquery";
 
 const ProductSlideshow = () => {
   return (
-    <div className="contaienr" id="certificates">
+    <div className="contaienr">
       <h1 className="text-center py-5">Certificates</h1>
       <div
         className="gallery js-flickity"

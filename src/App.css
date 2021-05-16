@@ -3,3 +3,30 @@
 * {
   font-family: "Noto Serif SC", sans-serif;
 }
+
+.test {
+  width: 80%;
+  margin: auto;
+  height: 240px;
+  overflow-x: scroll;
+  scroll-snap-type: both mandatory;
+  scroll-padding: 1rem;
+}
+
+.test::-webkit-scrollbar {
+  visibility: unset;
+}
+
+.slideshow {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: inherit;
+  width: 7400px;
+  position: relative;
+  left: 0;
+}
