@@ -13,7 +13,7 @@ const ProductSlideshow = () => {
         <h1 className="text-center py-5">Most Popular Products</h1>
         <div
           className="carousel js-flickity"
-          data-flickity-options='{ "wrapAround": true  }'
+          data-flickity-options='{ "wrapAround": true, "autoPlay": false, "freeScroll": true }'
         >
           <div className="carousel-cell">
             <Card />
@@ -33,11 +33,7 @@ const ProductSlideshow = () => {
           </div>
 
           <div className="carousel-cell">
-            <img
-              className="img-fluid"
-              src={"https://picsum.photos/200"}
-              alt="certificate__image"
-            />
+            <Card />
           </div>
         </div>
       </div>
