@@ -1,12 +1,13 @@
 .card {
   width: 18em;
+  margin: 0 auto;
   overflow: hidden;
   color: #333333;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border: none;
 }
 
 .card-img-top {
-  height: 200px;
+  height: 256px;
   width: inherit;
 }
 
