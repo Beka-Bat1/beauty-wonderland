@@ -4,3 +4,31 @@
   font-family: "Noto Serif SC", sans-serif;
 }
 
+:root {
+  --darkBlack: #070707;
+  --black: #292929;
+  --gray: #0000008c;
+  --white: #dcdcdc;
+  --girlish: #efdccd;
+  /* --gray1: #6c757d; */
+}
+
+.text__title__black {
+  color: var(--black);
+  font-weight: 500;
+}
+
+.text__title__white {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.text__cotitle__black {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.text__secondary{
+  color: var(--black);
+  font-size: 14px;
+}

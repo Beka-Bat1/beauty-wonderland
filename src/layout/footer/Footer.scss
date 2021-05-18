@@ -1,32 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap");
 
-
-:root {
-    --white: #dcdcdc;
-    --girlish: #efdccd;
-  }
-
-
-footer{
+footer {
     background-color: #070707;
     min-height: 4em;
     width: 100%;
-    color: var(--white);
+    color: #dcdcdc;
     font-family: "Noto Serif SC", sans-serif !important;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 64px;
 }
 
-.footer__section{
-    h3{
+.footer__section {
+    h3 {
         margin-bottom: 50px;
     }
-    p{
+    p {
         font-size: 18px;
     }
     display: flex;
@@ -34,16 +27,15 @@ footer{
     align-items: flex-start;
 }
 
-.list-group{
+.list-group {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 20px
+    margin: 20px;
 }
 
-.list-group-item{
+.list-group-item {
     background-color: transparent;
     border: none;
-    color: var(--white) ;
-
+    color: #dcdcdc;
 }

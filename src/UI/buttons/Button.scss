@@ -1,0 +1,69 @@
+.button__primary {
+  background-color: #292929;
+  color: #e5e5e5;
+  width: 125px;
+  height: 70px;
+  text-align: center;
+  border: 2px solid #292929;
+}
+
+.button__primary:hover {
+  background: rgb(41, 41, 41, 0.1);
+  color: #292929;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.button__primary:active {
+  transform: translatey(2px);
+}
+
+.button__secondary {
+  border: 2px solid #292929;
+  align-items: center;
+}
+
+.button__secondary:hover {
+  background-color: #e5e5e5;
+}
+
+.button__text__secodnary {
+  margin: 0 auto;
+}
+
+.button__container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+  text-align: center;
+
+  .button__shop {
+    width: 125px;
+    height: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid #292929;
+    background-color: transparent;
+    color: #292929 !important;
+    .count {
+      font: 24px Arial, sans-serif;
+    }
+    .btn {
+      margin: 0 6px;
+      padding: 0 6px;
+      box-shadow: none;
+    }
+    .btn:hover {
+      background: #e5e5e5;
+    }
+
+    .btn:active {
+      transform: translatey(3px);
+    }
+  }
+}

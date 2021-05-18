@@ -1,12 +1,12 @@
 import React from "react";
 import "./Card.css";
-import Button from "../../UI/button/Button";
+import { SecondaryButton } from "../../UI/buttons/Button.js";
 import cos2 from "../../media/images/cos2.jpg";
 
 const Card = (props) => {
   return (
     <div className="card">
-    {/* this line should contain images of product */}
+      {/* this line should contain images of product */}
       <img src={cos2} className="card-img-top" alt="..." />
       <hr />
       <div className="card-body">
@@ -16,8 +16,7 @@ const Card = (props) => {
         <h5 className="card-price">
           <span>₾</span> 67
         </h5>
-        <Button text={"Show More"} />
-
+        <SecondaryButton text={"Show More"} />
       </div>
     </div>
   );
