@@ -31,18 +31,6 @@ export const ShopButton = (props) => {
           <i class="fas fa-plus"></i>{" "}
         </button>
       </div>
-
-      <div className="button__shop">
-        <button className="btn">
-          {" "}
-          <i class="fas fa-minus"></i>{" "}
-        </button>
-        <span className="count">{props.text}</span>
-        <button className="btn">
-          {" "}
-          <i class="fas fa-plus"></i>{" "}
-        </button>
-      </div>
       <PrimaryButton text={"Add To Cart"} />
     </div>
   );

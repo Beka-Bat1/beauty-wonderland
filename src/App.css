@@ -28,7 +28,20 @@
   font-weight: 500;
 }
 
-.text__secondary{
+.text__secondary {
   color: var(--black);
   font-size: 14px;
+}
+
+.text__secondary__white {
+  color: var(--white);
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 769px) {
+  .text__title__black,
+  .text__title__white,
+  .text__cotitle__black {
+    font-size: 24px;
+  }
 }

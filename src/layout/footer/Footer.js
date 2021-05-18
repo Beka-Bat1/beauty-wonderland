@@ -6,26 +6,44 @@ const Footer = () => {
     <footer className="container-fluid">
       <div className="container">
         <div className="footer__section">
-          <h3>About Us</h3>
-          <p>about us</p>
-          <p>gallery</p>
-          <p> shop all</p>
+          <h3 className="text__title__white">About Us</h3>
+          <p className="text__secondary__white">about us</p>
+          <p className="text__secondary__white">gallery</p>
+          <p className="text__secondary__white"> shop all</p>
         </div>
         <div className="footer__section">
-          <h3>Customer Service</h3>
-          <p>faqs</p>
-          <p>returns</p>
-          <p>contact us</p>
+          <h3 className="text__title__white">Customer Service</h3>
+          <p className="text__secondary__white">faqs</p>
+          <p className="text__secondary__white">returns</p>
+          <p className="text__secondary__white">contact us</p>
         </div>
         <div className="footer__section">
-          <h3>Accout</h3>
-          <p>your account</p>
-          <p>your cart</p>
-          <p>settings</p>
+          <h3 className="text__title__white">Accout</h3>
+          <p className="text__secondary__white">your account</p>
+          <p className="text__secondary__white">your cart</p>
+          <p className="text__secondary__white">settings</p>
         </div>
       </div>
 
-      <ul className=" list-group">
+      <ul className="list-group">
+        <li className="list-group-item">#followus</li>
+
+        <li className="list-group-item">
+          {" "}
+          <i class="fab fa-facebook"></i>{" "}
+        </li>
+
+        <li className="list-group-item">
+          {" "}
+          <i class="fab fa-pinterest"></i>
+        </li>
+        <li className="list-group-item">
+          {" "}
+          <i class="fab fa-instagram"></i>
+        </li>
+      </ul>
+
+      <ul className="list-group">
         <li className="list-group-item">
           {" "}
           <span>

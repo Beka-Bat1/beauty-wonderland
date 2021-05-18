@@ -1,6 +1,5 @@
 import React from "react";
-import './Carousel.scss';
-
+import "./Carousel.scss";
 
 const Carousel = () => {
   return (
@@ -45,7 +44,7 @@ const Carousel = () => {
         </div>
         <div className="carousel-item">
           <img
-            src="https://media.giphy.com/media/mEJcIdipmoxNEfbd85/giphy.gif"
+            src="https://picsum.photos/375/1200"
             className="d-block w-100"
             alt="..."
           />
@@ -56,7 +55,7 @@ const Carousel = () => {
         </div>
         <div className="carousel-item">
           <img
-            src="https://media.giphy.com/media/cemy6gQuGxzaM/giphy.gif"
+            src="https://images.unsplash.com/photo-1617222957042-6c0fc454a29f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
             className="d-block w-100"
             alt="..."
           />
