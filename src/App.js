@@ -3,9 +3,10 @@ import React, { Component } from "react";
 import "./App.css";
 import Layer from "./layout/index";
 import Carousel from "./components/Carousel/Carousel";
-import { PrimaryHr, SecondaryHr } from "./UI/hr/blackHrs.js";
-import ProductSlideshow from "./components/ProductSlideshow/ProductSlideshow.js";
+import { PrimaryHr, SecondaryHr } from "./UI/hr/blackHrs";
+import ProductSlideshow from "./components/ProductSlideshow/ProductSlideshow";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
+import Authentication from "./components/Authentication/Authentication"
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <ProductSlideshow />
         <PrimaryHr />
         <ProductDetails />
+        <Authentication />
       </Layer>
     );
   }

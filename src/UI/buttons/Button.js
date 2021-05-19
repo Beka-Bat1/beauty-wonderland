@@ -11,7 +11,14 @@ export const PrimaryButton = (props) => {
 
 export const SecondaryButton = (props) => {
   return (
-    <button className="button__secondary">
+    <button
+      className="button__secondary"
+      style={{
+        width: props.width || "auto",
+        margin: props.margin,
+        padding: props.padding
+      }}
+    >
       <span className="button__text__secondary">{props.text}</span>
     </button>
   );
