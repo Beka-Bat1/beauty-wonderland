@@ -1,5 +1,5 @@
 .productdetail__container {
-  width: 80%;
+  padding: 0 3em;
   margin: 5em auto;
   display: grid;
   grid-template-areas: "overview image details";
@@ -88,8 +88,7 @@
     "overview"
     "details";
     grid-gap: 4.5em;
-    width: 100%;
-    padding: 20px;
+    padding: 3em;
     align-items: center;
   }
 

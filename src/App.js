@@ -8,6 +8,7 @@ import ProductSlideshow from "./components/ProductSlideshow/ProductSlideshow";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Authentication from "./components/Authentication/Authentication"
 import Registration from "./components/Registration/Registration";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 
 
@@ -22,6 +23,7 @@ class App extends Component {
         <ProductDetails />
         <Authentication />
         <Registration />
+        <ErrorPage />
       </Layer>
     );
   }
