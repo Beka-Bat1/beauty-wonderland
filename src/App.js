@@ -7,6 +7,9 @@ import { PrimaryHr, SecondaryHr } from "./UI/hr/blackHrs";
 import ProductSlideshow from "./components/ProductSlideshow/ProductSlideshow";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Authentication from "./components/Authentication/Authentication"
+import Registration from "./components/Registration/Registration";
+
+
 
 class App extends Component {
   render() {
@@ -18,6 +21,7 @@ class App extends Component {
         <PrimaryHr />
         <ProductDetails />
         <Authentication />
+        <Registration />
       </Layer>
     );
   }

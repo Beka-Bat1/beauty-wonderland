@@ -9,7 +9,7 @@ export const PrimaryHr = (props) => {
         width: props.width,
         margin: props.margin,
         padding: props.padding,
-      }}*
+      }}
     ></hr>
   );
 };

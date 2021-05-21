@@ -7,10 +7,10 @@
 :root {
   --darkBlack: #070707;
   --black: #292929;
-  --gray: #0000008c;
+  --gray: #e5e5e5;
   --white: #dcdcdc;
   --girlish: #efdccd;
-  /* --gray1: #6c757d; */
+  --gray1: #6c757d;
 }
 
 .text__title__black {
@@ -24,7 +24,7 @@
 }
 
 .text__cotitle__black {
-  color: var(--gray);
+  color: var(--gray1);
   font-weight: 500;
 }
 
@@ -43,5 +43,17 @@
   .text__title__white,
   .text__cotitle__black {
     font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .text__title__black,
+  .text__title__white{
+    font-size: 24px;
+  }
+
+  .text__cotitle__black{
+    font-size: 16px;
+
   }
 }
