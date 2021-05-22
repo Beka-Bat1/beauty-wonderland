@@ -3,7 +3,7 @@ import Navbar from "./navbar/Navbar";
 import Footer from "./footer/Footer";
 import "./index.css";
 
-const Layer = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
@@ -13,4 +13,4 @@ const Layer = ({ children }) => {
   );
 };
 
-export default Layer;
+export default Layout;

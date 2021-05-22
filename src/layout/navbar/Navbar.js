@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
+import NavigationItem from "./NavigationItem/NavigationItem";
 
 const Navbar = () => {
   return (
@@ -9,41 +10,32 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-alignment">
               <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Shop
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Gallery
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    About
-                  </a>
-                </li>
+                <NavigationItem link="home" className={"nav-link"}>
+                  Home
+                </NavigationItem>
+                <NavigationItem link="about" className={"nav-link"}>
+                  About
+                </NavigationItem>
+                <NavigationItem link="gallery" className={"nav-link"}>
+                  Gallery
+                </NavigationItem>
               </ul>
 
-              <li className="nav-item">
-                <a className="navbar-brand" href="#">
-                  Beauty Wonderland
-                </a>
-              </li>
+              <NavigationItem link="about" className={"navbar-brand"}>
+                BeautyWonderland
+              </NavigationItem>
 
               <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    My account
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    My cart
-                    <div className="cart__circle">1</div>
-                  </a>
-                </li>
+                <NavigationItem link="about" className={"nav-link"}>
+                  Shop
+                </NavigationItem>
+                <NavigationItem link="about" className={"nav-link"}>
+                  My account
+                </NavigationItem>
+                <NavigationItem link="about" className={"nav-link"}>
+                  My cart
+                  <div className="cart__circle">1</div>
+                </NavigationItem>
               </ul>
             </ul>
           </div>
