@@ -1,61 +1,94 @@
+import NavigationItem from "layout/NavigationItem/NavigationItem";
+import UnorderedList from "layout/UnorderedListWrapper/UnorderedList";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="container-fluid">
-      <div className="container">
-        <div className="footer__section">
-          <h3 className="text__title__white">About Us</h3>
-          <p className="text__secondary__white">about us</p>
-          <p className="text__secondary__white">gallery</p>
-          <p className="text__secondary__white"> shop all</p>
-        </div>
-        <div className="footer__section">
-          <h3 className="text__title__white">Customer Service</h3>
-          <p className="text__secondary__white">faqs</p>
-          <p className="text__secondary__white">returns</p>
-          <p className="text__secondary__white">contact us</p>
-        </div>
-        <div className="footer__section">
-          <h3 className="text__title__white">Accout</h3>
-          <p className="text__secondary__white">your account</p>
-          <p className="text__secondary__white">your cart</p>
-          <p className="text__secondary__white">settings</p>
-        </div>
+    <footer className="navbar-dark">
+      <div className="row">
+        <UnorderedList header="About Us" className="footer__section">
+          <NavigationItem link="about" className="nav-link">
+            gallery
+          </NavigationItem>
+          <NavigationItem link="about" className="nav-link">
+            Shop all
+          </NavigationItem>
+        </UnorderedList>
+
+        <UnorderedList header="Customer Service" className="footer__section">
+          <NavigationItem link="FAQ" className="nav-link">
+            FAQ
+          </NavigationItem>
+          <NavigationItem link="returns" className="nav-link">
+            Returns
+          </NavigationItem>
+          <NavigationItem link="returns" className="nav-link">
+            contact us
+          </NavigationItem>
+        </UnorderedList>
+
+        <UnorderedList header="Accout" className="footer__section">
+          <NavigationItem link="user-account" className="nav-link">
+            Account
+          </NavigationItem>
+          <NavigationItem link="user-cart" className="nav-link">
+            Shop all
+          </NavigationItem>
+          <NavigationItem link="settings" className="nav-link">
+            settings
+          </NavigationItem>
+        </UnorderedList>
       </div>
 
-      <ul className="list-group">
-        <li className="list-group-item">#followus</li>
+      <div className="row">
+        <ul className="list-group navbar-nav">
+          <li className="list-group-item">#followus</li>
 
-        <li className="list-group-item">
-          {" "}
-          <i class="fab fa-facebook"></i>{" "}
-        </li>
+          <li className="list-group-item">
+            {" "}
+            <a className="nav-link" href="https://www.facebook.com">
+              <i className="fab fa-facebook"></i>
+            </a>
+          </li>
 
-        <li className="list-group-item">
-          {" "}
-          <i class="fab fa-pinterest"></i>
-        </li>
-        <li className="list-group-item">
-          {" "}
-          <i class="fab fa-instagram"></i>
-        </li>
-      </ul>
+          <li className="list-group-item list-unstiled">
+            <a className="nav-link" href="https://www.facebook.com">
+              <i className="fab fa-pinterest"></i>
+            </a>
+          </li>
+          <li className="list-group-item">
+            <a className="nav-link" href="https://www.facebook.com">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-      <ul className="list-group">
-        <li className="list-group-item">
-          {" "}
-          <span>
-            <i className="far fa-copyright"></i>
-          </span>{" "}
-          BeutyWonderland inc. All rights reserved{" "}
-        </li>
+      <div className="row">
+        <ul className="list-group navbar-nav">
+          <li className="list-group-item">
+            {" "}
+            <span>
+              <i className="far fa-copyright"></i>
+            </span>{" "}
+            BeutyWonderland inc. All rights reserved{" "}
+          </li>
 
-        <li className="list-group-item"> Privacy Policy </li>
+          <li className="list-group-item">
+            <Link className="nav-link" to="privacy">
+              Privacy Policy
+            </Link>
+          </li>
 
-        <li className="list-group-item"> Terms and Conditions </li>
-      </ul>
+          <li className="list-group-item">
+            <Link className="nav-link" to="terms&conditions">
+              Terms and Conditions
+            </Link>
+          </li>
+        </ul>
+      </div>
     </footer>
   );
 };

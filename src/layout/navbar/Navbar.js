@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import NavigationItem from "./NavigationItem/NavigationItem";
+import NavigationItem from "../NavigationItem/NavigationItem";
 
 const Navbar = () => {
   return (
@@ -10,18 +10,18 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-alignment">
               <ul className="navbar-nav">
-                <NavigationItem link="home" className={"nav-link"}>
+                <NavigationItem link="home" className="nav-link">
                   Home
                 </NavigationItem>
-                <NavigationItem link="about" className={"nav-link"}>
+                <NavigationItem link="about" className="nav-link">
                   About
                 </NavigationItem>
-                <NavigationItem link="gallery" className={"nav-link"}>
+                <NavigationItem link="gallery" className="nav-link">
                   Gallery
                 </NavigationItem>
               </ul>
 
-              <NavigationItem link="about" className={"navbar-brand"}>
+              <NavigationItem link="home" className={"navbar-brand"}>
                 BeautyWonderland
               </NavigationItem>
 

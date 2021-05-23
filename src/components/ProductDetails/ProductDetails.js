@@ -4,6 +4,7 @@ import { ShopButton } from "../../UI/buttons/Button.js";
 import { PrimaryHr, SecondaryHr } from "../../UI/hr/blackHrs";
 import cos1 from "../../media/images/cos1.jpg";
 
+
 const ProductDetails = () => {
   return (
     <div className="productdetail__container">
