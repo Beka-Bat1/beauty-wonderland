@@ -14,12 +14,14 @@ export const SecondaryButton = (props) => {
     <button
       className="button__secondary"
       style={{
-        width: props.width || "auto",
+        width: props.width,
+        height: props.height,
         margin: props.margin,
         padding: props.padding
       }}
     >
       <span className="button__text__secondary">{props.text}</span>
+    {props.children}
     </button>
   );
 };
