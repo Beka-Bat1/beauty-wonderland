@@ -9,11 +9,11 @@ const Card = (props) => {
       <img src={props.productImage} className="card-img-top" alt="..." />
       <hr />
       <div className="card-body">
-        <h3 className="card-title">Card title</h3>
-        <p className="card__coheader"></p>
-        <p className="card-text">Some quick example</p>
+        <h6 className="card-title">{props.productName}</h6>
+        <p className="card__coheader">{props.productConame}</p>
+        <p className="card-text">{props.productDetail}</p>
         <h5 className="card-price">
-          <span>₾</span> 67
+          <span>₾</span> {props.productPrice}
         </h5>
         <SecondaryButton text={"Show More"} />
       </div>

@@ -1,5 +1,6 @@
 .card {
   width: auto;
+  max-width: 250px;
   margin: 0 auto;
   overflow: hidden;
   color: #333333;

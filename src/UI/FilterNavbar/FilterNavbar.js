@@ -1,28 +1,25 @@
-import React, { useState } from "react";
-import { PrimaryButton, SecondaryButton } from "UI/buttons/Button";
-import InputElemnt from "UI/InputElement/InputElement";
+import React, { useContext } from "react";
 import "./FilterNavbar.scss";
+/* UI */
+import { SecondaryButton } from "UI/buttons/Button";
+import InputElement from "UI/InputElement/InputElement";
+import { InputFormContext } from "components/contexts/shopAPI/ShopContext";
+/* context */
 
 const FilterNavbar = () => {
-  const [searchValue, setSearchValue] = useState("");
-
-  const valueChangeHandler = (e) => {
-    e.preventDefault()
-    console.log(e.target);
-
-    /* just lowercase monster thing don't be afraid :) */
-    // let tmp = people.filter((p) =>
-    //   p.name.toLowerCase().includes(e.target.value.toLowerCase())
-    // );
-    // sendSearchValue(tmp);
-  };
-
+  const { searchInputValue, onInputChange } = useContext(InputFormContext);
   return (
     <div className="filter__navbar">
       <div className="filter__navbar__buttons">
-        {/* <form onSubmit={(e) => valueChangeHandler(e)}> */}
-          <InputElemnt onChange={(e) => valueChangeHandler(e)} />
-        {/* </form> */}
+        <InputElement
+          height="40px"
+          width="auto"
+          type="text"
+          value={searchInputValue}
+          onChange={(e) => onInputChange(e)}
+        >
+          <i className="fas fa-search"></i>
+        </InputElement>
 
         <SecondaryButton
           text="Sort By"
@@ -35,7 +32,7 @@ const FilterNavbar = () => {
 
         <SecondaryButton
           text="Filter By"
-          margin="2em"
+          margin="0 10px"
           height="40px"
           width="170px"
         >

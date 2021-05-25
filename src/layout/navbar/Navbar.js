@@ -26,7 +26,7 @@ const Navbar = () => {
               </NavigationItem>
 
               <ul className="navbar-nav">
-                <NavigationItem link="about" className={"nav-link"}>
+                <NavigationItem link="shop" className={"nav-link"}>
                   Shop
                 </NavigationItem>
                 <NavigationItem link="about" className={"nav-link"}>

@@ -1,26 +1,50 @@
+import { processData } from "containers/pages/Shop/utilities.js";
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { FetchHook } from "../utilities.js";
 import "./utils.js";
 
-const payloadURL = "https://makeup-api.herokuapp.com/api/v1/products.json";
 
-const ProductsContext = createContext("hey");
+/* API endpoint */
+const payloadURL = "http://makeup-api.herokuapp.com/api/v1/products.json";
+
+/* context for search and filter navbar */
+export const InputFormContext = createContext(null);
 
 export const ProductsContextProvider = ({ children }) => {
-  const [productData, setProductData] = useState(["hey", "hi!", "helo,world"]);
+  const [result, error, isLoading] = FetchHook(payloadURL);
+  const [searchInputValue, setSearchInputValue] = useState("");
+  const [peopleData, setPeopleData] = useState([]);
 
-  const selectItem = () => {
-    alert("item Selected");
+  const filterPeopleParams = {};
+
+  const usePeopleData = (filtersToApply) => {
+    const filteredData = processData(filtersToApply)(result);
+    return filteredData;
+  };
+
+  const people = usePeopleData(filterPeopleParams);
+
+  const valueChangeHandler = (inputValue) => {
+    console.log(inputValue, "from SHOP");
+    setSearchInputValue(inputValue);
+
+    let tmp = people.filter((p) =>
+      p.name.toLowerCase().includes(inputValue.toLowerCase())
+    );
+    setPeopleData(tmp);
   };
 
   return (
-    <ProductsContext.Provider 
-// @ts-ignore
-    value={{ productData, selectItem }}>
-      {children}
-    </ProductsContext.Provider>
+    <InputFormContext.Provider
+      value={{
+        searchInputValue,
+        onInputChange: (inputValue) => valueChangeHandler(inputValue),
+      }}
+    >
+    {children}
+    </InputFormContext.Provider>
   );
 };
 
-const useProductData = () => useContext(ProductsContext);
 
-export default useProductData;
+export default ProductsContextProvider;
